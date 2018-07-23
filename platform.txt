@@ -1,0 +1,31 @@
+pragma solidity ^0.4.20;
+
+import ''browser/user.sol";
+import "browser/company.sol";
+
+contract platform{
+      
+      usersdetails u1=usersdetails(0x76f627b7185b4fd9c747b6ed246061d97d7059dd);
+      
+       function test() constant returns(uint){
+         u1.getdetails()
+      }
+         CompanyDetails n1=CompanyDetails( 0x523be0fdf12bd6b281618d60f0f94ddb6ce6e6b3);
+      
+            function test2() constant returns(uint){
+            n1.getCompanyDetails();
+       }
+         uint Ubar_code=13233;
+         uint Cbar_code=13233;
+     
+        function result() constant returns(string){
+          if(Ubar_code==Cbar_code)
+         {
+             return("original product");
+             }
+           else 
+            {
+                  return("fake product");
+                }
+}
+}
